@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="531.0" prefWidth="699.0" style="-fx-background-color: #F8F284;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projetoihc.FXMLHelpController">
+   <children>
+      <Label layoutX="282.0" layoutY="14.0" prefHeight="67.0" prefWidth="114.0" text="Help" textFill="#190b86">
+         <font>
+            <Font name="Comic Sans MS" size="48.0" />
+         </font>
+      </Label>
+      <TextArea editable="false" layoutX="14.0" layoutY="108.0" prefHeight="120.0" prefWidth="675.0" snapToPixel="false" style="-fx-control-inner-background: #F8F284;" text="As regras do sudoku (que em japonês significa &quot;número único) são simples e, apesar de apresentar números, não é necessário fazer qualquer tipo de conta. Basta completar todos os espaços seguindo as seguintes restrições:    Não repetir números na mesma linha, na mesma coluna nem na mesma grade." wrapText="true">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="bt_voltar" layoutX="589.0" layoutY="476.0" mnemonicParsing="false" onAction="#onBack" prefHeight="32.0" prefWidth="83.0" text="Voltar">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font></Button>
+      <ImageView fitHeight="213.0" fitWidth="249.0" layoutX="216.0" layoutY="266.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/solved.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

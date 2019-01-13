@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="464.0" prefWidth="626.0" style="-fx-background-color: #F8F284;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projetoihc.FXMLDocumentController">
+   <children>
+      <Label layoutX="55.0" layoutY="117.0" prefHeight="59.0" prefWidth="173.0" text="LogIn " textFill="#81c7e1" AnchorPane.leftAnchor="55.0" AnchorPane.topAnchor="117.0">
+         <font>
+            <Font name="Comic Sans MS" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="166.0" layoutY="28.0" prefHeight="70.0" prefWidth="294.0" text="HexaSudoku" textFill="#190b86" AnchorPane.topAnchor="28.0">
+         <font>
+            <Font name="Comic Sans MS" size="48.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf_nomeUtilizador" layoutX="51.0" layoutY="226.0" prefHeight="25.0" prefWidth="181.0" promptText="Nome Utilizador" AnchorPane.leftAnchor="51.0" AnchorPane.topAnchor="226.0" />
+      <TextField fx:id="tf_password" layoutX="51.0" layoutY="276.0" prefHeight="25.0" prefWidth="181.0" promptText="Password" AnchorPane.leftAnchor="51.0" AnchorPane.topAnchor="276.0" />
+      <ImageView fitHeight="225.0" fitWidth="228.0" layoutX="372.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="29.0">
+         <image>
+            <Image url="@../images/sudoku-puzzle-game-math-riddle-512.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="bt_login" layoutX="71.0" layoutY="404.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="71.0" text="LogIn" AnchorPane.bottomAnchor="34.0" AnchorPane.leftAnchor="71.0">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="lb_signIn" layoutX="438.0" layoutY="405.0" onMouseClicked="#onSignIn" prefHeight="25.0" prefWidth="137.0" text="Don't have an account?" textFill="#0713ff" underline="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <ImageView fitHeight="44.0" fitWidth="53.0" layoutX="553.0" layoutY="41.0" onMouseClicked="#onHelp" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/iconfinder_lifesaver2_51567.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="438.0" layoutY="381.0" onMouseClicked="#forgotPass" prefHeight="17.0" prefWidth="123.0" text="Forgot your Password?" textFill="#0713ff" underline="true" />
+   </children>
+</AnchorPane>
